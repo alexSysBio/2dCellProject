@@ -1,4 +1,4 @@
-# twod_project
+# 📏 twod_average_cell_projections 📐
 
 This repository contains all functions used to generate average two-dimensional cell projections from birth to division.
 This repository uses data from two dataframes to generate the average cell projections:
