@@ -8,9 +8,13 @@ This repository uses data from two dataframes to generate the average cell proje
 
 Examples of the two dataframe formats can be found in the BioImages archive: https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD1658 and the https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/658/S-BIAD1658/Files/CJW7323_microfluidics.zip folder. Dataframe 1 (or 'mother_df') corresponds to the dataframe titled 'CJW7323_microfluidics_normal_growth', whereas the Dataframe 2 (or 'oned_df') corresponds to the the dataframe titled 'CJW7323_one_dimensional_fluorescence_microfluidics'. 
 
-Please cite:
-Nonequilibrium polysome dynamics promote chromosome segregation and its coupling to cell growth in Escherichia coli
+  Cite:
+    
+    Nonequilibrium polysome dynamics promote chromosome segregation and its coupling to cell growth in Escherichia coli
+    
+    Alexandros Papagiannakis, Qiwei Yu, Sander K. Govers, Wei-Hsiang Lin,  Ned S. Wingreen, Christine Jacobs-Wagner
+    
+    eLife2025;14:RP104276 DOI: https://doi.org/10.7554/eLife.104276.3
 
-Alexandros Papagiannakis, Qiwei Yu, Sander K. Govers, Wei-Hsiang Lin,  Ned S. Wingreen, Christine Jacobs-Wagner
 
-eLife2025;14:RP104276 DOI: https://doi.org/10.7554/eLife.104276.3
+An example for using the functions provided in this repository is provided in the 'run_example.py' script
