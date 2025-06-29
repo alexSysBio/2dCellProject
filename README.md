@@ -18,4 +18,4 @@ Examples of the two dataframe formats can be found in the BioImage S-BIAD1658 ar
 
 
 An example for using the functions provided in this repository is provided in the 'run_example.py' script
-([movie_example.gif](https://github.com/alexSysBio/twod_average_cell_projections/blob/main/movie_example.gif))
+(![movie_example.gif](https://github.com/alexSysBio/twod_average_cell_projections/blob/main/movie_example.gif))
