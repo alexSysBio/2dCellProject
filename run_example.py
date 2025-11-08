@@ -13,10 +13,11 @@ import cmasher as cmr
 
 bio_path = r"...\BioStudies_Data\eLife_Papagiannakis_etal\CJW7323_microfluidics"
 
+# loading the data from BioStudies
 mother_df = dload.load_cell_cycle_dataframe(bio_path+'/CJW7323_microfluidics_normal_growth')
 oned_df = dload.load_pixel_projections(bio_path+'/CJW7323_one_dimensional_fluorescence_microfluidics')
 
-
+# Parameters
 cc_range = (0,1,0.025)
 gr_range = (0.65,2)
 v_ranges = [(270,580),(100,275)]
@@ -27,11 +28,15 @@ gaussian_sigma = 0
 show_mesh = True
 image_format = '.jpeg'
 
-
+# Caculate average cell arrays per cell cycle bin
 array_dict = avcel.generate_movie_arrays(oned_df, mother_df, cc_range, gr_range, [2,3])
+# Save arrays
 avcel.save_cell_arrays(array_dict, r"...\2D_cell_projections"+'/2D_cell_arrays_dict')
+# Load arrays
 array_dict = avcel.load_cell_arrays(r"...\2D_cell_projections"+'/2D_cell_arrays_dict')
 
+# Generate images
 plot_dict = arplt.plot_cell_projections(array_dict, v_ranges, cmaps, meshcolor, rescale_factor, gaussian_sigma, show_mesh, image_format
                                         r"...\2D_cell_projections\cell_projections")
+
 
