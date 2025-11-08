@@ -22,10 +22,16 @@ gr_range = (0.65,2)
 v_ranges = [(270,580),(100,275)]
 meshcolor='white'
 cmaps = (cmr.ember,cmr.cosmic)
+rescale_factor = 2
+gaussian_sigma = 0
+show_mesh = True
+image_format = '.jpeg'
+
 
 array_dict = avcel.generate_movie_arrays(oned_df, mother_df, cc_range, gr_range, [2,3])
 avcel.save_cell_arrays(array_dict, r"...\2D_cell_projections"+'/2D_cell_arrays_dict')
 array_dict = avcel.load_cell_arrays(r"...\2D_cell_projections"+'/2D_cell_arrays_dict')
 
-plot_dict = arplt.plot_cell_projections(array_dict, v_ranges, cmaps, meshcolor, 
+plot_dict = arplt.plot_cell_projections(array_dict, v_ranges, cmaps, meshcolor, rescale_factor, gaussian_sigma, show_mesh, image_format
                                         r"...\2D_cell_projections\cell_projections")
+
